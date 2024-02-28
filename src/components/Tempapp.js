@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/style.css";
 
 const Tempapp = () => {
-    return (
+
+    const [city, setCity] = useState("null");
+    const [search, setSearch] = useState("Mumbai");
+
+    return ( 
         <>
             <div className="box">
                 <div className="inputdata">
@@ -17,7 +21,7 @@ const Tempapp = () => {
 
                 <div className="info">
                     <h2 className="location">
-                        <i class="fas fa-street-view"></i>Pune
+                        <i class="fas fa-street-view"></i>{city}
                     </h2>
 
                     <h1 className="temp">

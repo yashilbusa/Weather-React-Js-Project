@@ -1,11 +1,10 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Tempapp from "./components/Tempapp";
 
 function App() {
   return (
-    <div>
-      <h1>Hello Yashil</h1>
-    </div>
+    <Tempapp />
   );
 }
 
